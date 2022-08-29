@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container-carosello {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#carosello {
+    height: 50vh;
+    position: relative;
+}
+
+.foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.foto.attiva {
+    display: inline-block;
+}
+
+#carosello-scorritore {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#carosello-scorritore button {
+    font-size: 32px;
+}
+
+#carosello-scorritore button:hover {
+    background-color: blue;
+}
